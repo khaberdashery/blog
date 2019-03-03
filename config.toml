@@ -1,0 +1,7 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Karey Oke's Haberdashery"
+theme = "haberdashery"
+
+[params]
+    highlight= "default"

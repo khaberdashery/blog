@@ -1,0 +1,3 @@
+[submodule "haberdashery"]
+	path = themes/haberdashery
+	url = https://github.com/khaberdashery/theme.git
