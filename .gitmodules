@@ -1,3 +1,7 @@
 [submodule "haberdashery"]
 	path = themes/haberdashery
 	url = https://github.com/khaberdashery/theme.git
+[submodule "public"]
+	path = public
+	url = git@github.com:khaberdashery/khaberdashery.github.io.git
+	branch = master
