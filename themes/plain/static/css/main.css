@@ -1,0 +1,313 @@
+a {
+	color: #333;
+	text-decoration: none;
+	line-height: inherit;
+	outline: 0;
+	-webkit-transition: color .1s ease-out;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: .1s;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-delay: initial;
+	-moz-transition: color .1s ease-out;
+	-o-transition: color .1s ease-out;
+	-ms-transition: color .1s ease-out;
+	transition: color .1s ease-out;
+	transition-property: color;
+	transition-duration: .1s;
+	transition-timing-function: ease-out;
+	transition-delay: initial
+}
+
+a:hover {
+	color: #b3b3b3
+}
+
+p a,
+p a:visited {
+	line-height: inherit
+}
+
+.container {
+	width: 90%;
+	max-width: 800px;
+	margin: auto
+}
+
+.post-header {
+	text-align: center
+}
+
+.post-title {
+	margin-bottom: 1.8rem;
+}
+
+.post-time {
+    font-size: 100%;
+    color: #555;
+}
+
+.post-excerpt,
+.post-content {
+    font-size: 115%;
+}
+
+.post-footer {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 80%;
+	margin-top: 30px
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-family: serif;
+	font-size: 100%;
+	line-height: 1.65;
+	font-weight: normal;
+	overflow-y: scroll;
+	min-height: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+body {
+	background-color: #fff !important;
+	padding: 0;
+	color: #555;
+	min-height: 100%;
+	*zoom: 1;
+	-webkit-font-smoothing: antialiased;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Helvetica";
+	font-weight: 700;
+	line-height: 1;
+	margin-top: 0;
+	text-rendering: optimizeLegibility
+}
+
+h1 {
+	margin-bottom: 0.495em;
+	font-size: 2.5em;
+}
+
+@media (max-width: 550px) {
+	h1 {
+		font-size: 50px
+	}
+}
+
+h2 {
+	font-size: 48px;
+	font-size: 2.6667rem;
+	margin-bottom: 0.61875em
+}
+
+@media (max-width: 550px) {
+	h2 {
+		font-size: 43px
+	}
+}
+
+h3 {
+	font-size: 36px;
+	font-size: 1.8rem;
+	margin-bottom: 0.825em
+}
+
+@media (max-width: 550px) {
+	h3 {
+		font-size: 28px
+	}
+}
+
+h4 {
+	font-size: 24px;
+	font-size: 1.3333333333333333rem;
+	margin-bottom: 1.2375em
+}
+
+@media (max-width: 550px) {
+	h4 {
+		font-size: 22px
+	}
+}
+
+h5 {
+	font-size: 21px;
+	font-size: 1.16667rem;
+	margin-bottom: 1.4142857142857141em
+}
+
+@media (max-width: 550px) {
+	h5 {
+		font-size: 19px
+	}
+}
+
+h6 {
+	font-size: 18px;
+	font-size: 1rem;
+	margin-bottom: 1.65em
+}
+
+@media (max-width: 550px) {
+	h6 {
+		font-size: 15px
+	}
+}
+
+@media (max-width: 550px) {
+	ul.languages {
+		font-size: 24px;
+	}
+}
+
+p {
+	margin: auto auto 1.5em
+}
+
+code {
+	font-size: 14px;
+	overflow: auto;
+    border-radius: 3px;
+    display: block;
+    padding: 15px;
+    border: 1px solid #f3f3f3;
+}
+
+#site-header {
+	text-align: center;
+	min-height: 10em;
+	/* padding-top: 2em; */
+}
+
+@media (max-width: 800px) {
+	#site-header {
+		padding-top: 4em !important;
+		margin-bottom: 4em !important
+	}
+}
+
+.blog-title {
+	padding-top: .5em;
+}
+
+ul.languages {
+	margin: 0px;
+}
+
+li.language {
+	display: inline;
+}
+
+li.language:first-child:before {
+	content: "";
+  }
+
+li.language::before {
+	color: #e3e3e3;
+	content: " | ";
+}
+
+.post-content a,
+#site-footer a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold
+}
+
+.post-content a:hover,
+#site-footer a:hover {
+	color: #e6e6e6;
+	border-bottom: 1px solid
+}
+
+.m-logo {
+	display: none !important;
+	visibility: hidden
+}
+
+.p-post-title {
+	margin-bottom: 1.8rem;
+}
+
+.f-1 {
+	*zoom: 1
+}
+
+.f-1:before,
+.f-1:after {
+	content: "";
+	display: table
+}
+
+.f-1:after {
+	clear: both
+}
+
+.author {
+	float: left
+}
+
+@media (max-width: 550px) {
+	.author {
+		float: none !important
+	}
+}
+
+@media (max-width: 550px) {
+	.author {
+		float: none !important
+	}
+	.f-post-time {
+		float: inherit !important
+	}
+}
+
+.f-post-time {
+	float: right
+}
+
+@media (max-width: 550px) {
+	.f-post-time {
+		float: none !important
+	}
+}
+
+.f-2 {
+	*zoom: 1
+}
+
+.f-2:before,
+.f-2:after {
+	content: "";
+	display: table
+}
+
+.f-2:after {
+	clear: both
+}
+
+.f-post-tags {
+	float: right
+}
+
+@media (max-width: 550px) {
+	.f-post-tags {
+		float: none !important
+	}
+}

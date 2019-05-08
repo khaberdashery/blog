@@ -1,7 +1,31 @@
 baseURL = "https://khaberdashery.github.io/"
 languageCode = "en-us"
 title = "Karey Oke's Haberdashery"
-theme = "haberdashery"
+theme = "plain"
+
+pygmentsStyle = "bw"
+pygmentsCodeFences = true
+pygmentsOptions = ""
 
 [params]
-    highlight= "default"
+    highlight = "default"
+
+DefaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    title = "Karey Oke's Haberdashery"
+    weight = 1
+    languageName = "en"
+    contentDir = "content/posts/en"
+  [languages.jp]
+    title = "Karey Okeの小間物"
+    weight = 2
+    languageName = "日本語"
+    contentDir = "content/posts/jp"
+
+  [languages.ru]
+    title = "Karey Oke's Haberdashery"
+    weight = 2
+    languageName = "русский"
+    contentDir = "content/posts/ru"

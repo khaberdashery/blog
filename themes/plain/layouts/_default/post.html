@@ -1,0 +1,40 @@
+<article class="{{ .Type }}">
+    <header class="post-header">
+        <p class="post-time">
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{ if eq .Page.Language.Lang "ru" }}
+                    {{ .Date.Day }} {{ index $.Site.Data.months_ru (printf "%d" .Date.Month) }} {{ .Date.Year }}
+                {{ else }}
+                    {{ .Date.Format "January 2, 2006" }}
+                {{ end }}
+            </time>
+        </p>
+        <h3 class="p-post-title">{{ .Title }}</h3>
+    </header>
+
+    <section class="post-content">
+        {{ .Content }}
+    </section>
+
+    <footer class="post-footer">
+        <section class="f-1">
+            {{ if isset .Params "author" }}
+            <section class="author">
+                <p>Words by {{ index .Params "author" }}</p>
+            </section>
+            {{ else if isset .Site.Params "author" }}
+            <section class="author">
+                <p>Words by {{ index .Site.Params "author" }}</p>
+            </section>
+            {{ end }}
+        </section>
+                        
+        <section class="f-2">
+            {{ with .Params.tags }}
+                <span class="f-post-tags"><i class="fa fa-tag"></i>
+                {{ delimit  . ", " }}
+                </span>
+            {{ end }}
+        </section>
+    </footer>
+</article>
